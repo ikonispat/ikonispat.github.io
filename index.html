@@ -45,40 +45,7 @@
     .card h3 { color: var(--accent); margin-bottom: 10px; }
     .card p { color: #555; }
     footer { background: var(--white); text-align: center; padding: 40px 20px; color: #777; font-size: 0.9rem; border-top: 1px solid #ddd; }
-  
-    .hamburger {
-      display: none;
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    @media (max-width: 768px) {
-      nav ul {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100%;
-        width: 200px;
-        background: var(--white);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: right 0.3s ease;
-        box-shadow: -2px 0 8px var(--shadow);
-      }
-      nav ul.active {
-        right: 0;
-      }
-      .hamburger {
-        display: block;
-      }
-    }
-    </style>
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById('nav-menu');
-        menu.classList.toggle('active');
-      }
-    </script>
+  </style>
 </head>
 <body>
   <header>
@@ -88,8 +55,7 @@
         <span>Ikon Ispat Pvt. Ltd.</span>
       </div>
       <nav>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-<ul id="nav-menu">
+        <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
